@@ -1,0 +1,384 @@
+/* Adding font faces */
+@font-face {
+    font-family: 'CodeProDemoRegular';
+    src: url('../fonts/Code_Pro_Demo-webfont.eot');
+    src: url('../fonts/Code_Pro_Demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Code_Pro_Demo-webfont.woff') format('woff'),
+         url('../fonts/Code_Pro_Demo-webfont.ttf') format('truetype'),
+         url('../fonts/Code_Pro_Demo-webfont.svg#CodeProDemoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro-Regular.otf')
+}
+
+body{
+  background-color: #f9f9f9;
+  color: #282828;
+  font-family: 'MyriadPro';
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/* The top part of the website */
+#top{
+  width: 100%;
+}
+
+
+img{ 
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* hover on thumbnail images */
+main img:hover{
+    opacity: 0.55;
+}
+
+
+header{
+  background-color: #3d3d3d;
+  display: block;
+  margin: 0;
+  max-height: 75px;
+  padding: 25px;
+  padding-bottom: 10px;
+}
+
+header a{ 
+  color:  #ffffff;
+  font-family: 'CodeProDemoRegular';
+  font-size: 30pt;
+  margin: 0;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/* Headings */
+h2{
+  color: #d31e23;
+  font-family: 'CodeProDemoRegular';
+  font-size: 20pt;
+  margin: 0;
+  padding: 5px;
+}
+
+h3{
+  color: #ffffff;
+  font-family: 'CodeProDemoRegular';
+  font-size: 18pt;
+  margin: 0;
+  padding: 15px;
+  padding-bottom: 10px;
+}
+
+h4{
+  color: #282828;
+  font-size: 8pt;
+  margin: 0;
+  padding: 5px;
+  padding-top: 1px;
+}
+
+p{
+  margin: 0;
+  padding: 5px;
+}
+
+/* Menu */
+nav{
+  background-color: #3d3d3d;
+  display: block;
+  font-family: 'CodeProDemoRegular';
+  font-size: 12pt;
+  padding-left: 10px;
+  top: 75px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+  position: relative;
+  margin:0;
+}
+
+nav ul li a{
+  background-color: #3d3d3d;
+  color: #d31e23;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav li ul {
+  position: absolute;
+  top: 100%;
+  opacity: 0.9;
+  padding:  0;
+  width: auto;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li:hover>ul{
+  display: block;
+}
+
+nav ul li>ul:hover>li{
+  
+}
+
+nav ul li:hover>a {
+  background-color: #d31e23; 
+  color: #ffffff;
+}
+
+nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+nav li li {
+	display: block;
+	float: none;
+}
+
+#current{
+   background-color: #d31e23; 
+   color: #ffffff; 
+}
+
+/* Second menu */
+section{
+  background-color: #3d3d3d;
+  display: table-cell;
+  margin: 0; 
+  min-height: auto;
+  padding: 10px 0;
+  padding-bottom: 10px;
+  width: 30%;
+}
+
+section ul li{
+  color: #ffffff;
+  display: block;
+  font-family: 'CodeProDemoRegular';
+  font-size: 12pt;
+  padding: 8px 25px;
+  margin: 0;
+  text-decoration: none;
+}
+
+
+section ul li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+section ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+section .small li a{
+  color: #d31e23;
+  margin-left: 10px;
+}
+
+section h3{
+  padding-left: 25px;
+}
+
+ /* under the main image */
+#bottom{
+  margin: 0 auto;
+  width: 80%;
+  z-index: 2;
+}
+
+/* main content */
+main{ 
+  display: table-cell;
+  margin: 0 auto;
+  padding: 20px 50px;
+  width: 70%;
+}
+
+main a{
+  color: #777777;
+  text-decoration: none;
+}
+
+main h3{
+  color: #282828;
+  font-size: 12pt;
+  padding: 5px;
+  padding-top: 15px;
+}
+
+main img{
+  border: 0;
+  display: inline;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+}
+
+main ul li{
+  padding: 5px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 5px;
+}
+
+td{
+  padding-right: 5px;
+}
+
+/*Footer Styling*/
+footer{
+  background-color: #4f4f4f;
+  font-size: 8pt;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
+
+footer ul{
+    display: inline;
+}
+
+footer li{
+  display: inline-block;
+  font-size: 10pt;
+  padding: 0 5px;
+  margin: 0;
+  text-decoration: none;
+}
+
+footer a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+footer h2{
+   display: inline;
+   font-size: 14pt;
+   text-decoration: none;
+}
+
+#fcontent{
+    display: block;
+    padding: 5px;
+}
+
+/* Form styling */
+span{
+    display: inline-block;
+    margin-top: 5px;
+    width: 100px;
+}
+
+form{
+    border-radius: 20px;
+    padding: 15px 5px;
+}
+
+input, textarea{
+    background-color: #ffffff;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 4px;
+    vertical-align: top;
+}
+
+/* Buttons on the Comments page */
+.button{
+    background-color: #3d3d3d;
+    color: #ffffff;
+    font-size: 10pt;
+    padding: 5px 15px;
+}
+
+.button:hover{
+    background-color: #d31e23;
+    border: 0;
+}
+
+/* showPic is responsible for displaying bigger version of thumbnail images */
+#showPic{
+    background-color: #282828;
+    display: none;
+    left: 0;
+    margin: 0 auto;
+    padding: 25px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 50%;
+    z-index: 100;
+}
+
+/* The p on the showPic */
+#showPic p{
+    color: #ffffff;
+    text-align: center;
+}
+
+/* The main images start with display none */
+.noshow{
+    display: none;
+}
+
+/* Table on the comments page */
+tr,td{
+    padding: 5px 10px;
+    padding-left: 0;
+}
+
+/* Adding style to the map */
+#mapSP{
+    width: 500px;
+    height: 400px;
+} 
+
+ #mapPINA, #mapMASP, #mapFUT, #mapSA, #mapAugusta, #mapMadalena, #mapBenedito, #mapMasp, #mapMunicipal, #mapLIBERDADE, #mapPaulista, #mapEstaiada, #mapIbirapuera, #map25, #mapCopan{
+    float: right;
+    height: 200px;
+    margin-top: 9px;
+    position: relative;
+    width: 300px;
+    z-index: 1;
+ }
+
+#sitemap:hover{
+    opacity: 1;
+}
+
+/* style for the hidden menus */
+#showmuseum, #showbakeries, #showmarkets{
+    display: none;
+}
